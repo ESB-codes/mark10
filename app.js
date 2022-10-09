@@ -28,6 +28,10 @@ function calculateReturn(toBeReturned){ // dry run. let to be returned be 250
 
 checkButton.addEventListener("click", function(){
     hideError()
+    if (billAmount.value==cashAmount.value){
+        showError("Cash given is equal to bill Amount. No change to be given to customer")
+
+    }
 
     if(billAmount.value>0){
 
